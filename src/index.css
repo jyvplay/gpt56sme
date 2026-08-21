@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+/* SIDECAR: Tailwind v4 automatic content detection skips `node_modules`, so the
+   packaged application source must be registered explicitly or every class used
+   inside `unkbv10` would be tree-shaken out of the stylesheet. */
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    @apply bg-zinc-50 text-zinc-900 antialiased;
+  }
+}

@@ -1,0 +1,13 @@
+@import "tailwindcss";
+
+/* Sidecar: Tailwind v4 must scan the package sources (node_modules is skipped
+   by automatic content detection, so the source is registered explicitly). */
+
+@layer base {
+  html {
+    color-scheme: light;
+  }
+  body {
+    @apply bg-zinc-50 text-zinc-900 antialiased;
+  }
+}
